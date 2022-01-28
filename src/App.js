@@ -71,7 +71,7 @@ function App() {
                         />
                         <Route
                             path="/book/:id"
-                            render={(props) => <Desc books={books} />}
+                            render={(props) => <Desc books={books}  {...props} />}
                         />
                     </switch>
                 </Router>
