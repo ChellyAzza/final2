@@ -1,38 +1,169 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    background-color: rgb(73, 79, 82);
+    color: white;
+    font-size: calc(10px + 2vmin);
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: crimson;
+}
+
+.book-liste {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.book-carde {
+    border-radius: 6px;
+    background: rgb(73, 79, 82);
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    font-size: 10px;
+}
+
+.book-carde>img {
+    width: 100%;
+    height: 297px;
+}
+
+.book-carde>h2 {
+    color: red;
+    font-size: 20px;
+}
+
+.book-carde>h3 {
+    color: white;
+    font-size: 13px;
+}
+
+.btn-card {
+    outline: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: white;
+    width: 100px;
+    border: 0.5 solide rgba(0, 0, 0.37);
+    padding: 0.5rem 1rem;
+}
+
+.btn-card:hover {
+    background-color: red;
+    color: wheat;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.details>img {
+    width: 450px;
+    height: 450px;
+    margin: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.ktiba {
+    text-align: left;
+}
+
+.ktiba>h1 {
+    color: red;
+}
+
+.inp {
+    height: 50px;
+    width: 80%;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background: none;
+    flex: 1;
+    margin: 25px;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
 }
